@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../assets/img/Rectangle\ 1.png);
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navigation {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--font-color);
+    align-items: center;
+    width: 100vw;
+    font-family: var(--font-One);
+}
+
+.navigation div {
+    font-size: 30px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation ul li {
+    padding: 12px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.mainContent {
+    font-size: 60px;
+    color: aliceblue;
+    font-family: var(--font-One);
+    font-weight: bold;
+    display: flex;
+    min-height: 90vh;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41vw;
+}
+
+.Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -39px;
+}
+
+.Title div {
+    position: relative;
+    top: 47px;
+    left: -1px;
+}
+
+.Title span {
+    color: aqua;
+    font-size: 83px;
+    padding: 0;
+}
+
+.Title p{
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.right{
+    background-image: url(../assets/img/doodles\ mixed\ round.png);
+    background-repeat: no-repeat;
+    width: 30%;
+    position: relative;
+    right: -229px;
+    top:90px;
+}
+
+.right img{
+    position: relative;
+    top: 76px;
+    left: 0px;
+}
+
+.templateContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    position: relative;
+    box-shadow: 
+    inset -5px 0 200px 10px rgba(0,0,0,0.4),  /* inner left shadow */
+    inset  5px 0 200px 10px rgba(0, 0, 0, 0.4);
+}
+
+.templateContainer::after{
+    content: "";
+    background-image: url(../assets/img/doodle\ items.png);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.info{
+    margin: 10px 25px;
+    top: 26px;
+    font-size: 37px;
+    font-family: var(--font-One);
+    left: 27px;
+    font-weight: 15px;
+}
+
+#indexTemplate{
+    font-size: 50px;
+}
+
+.cardsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 240px;
+    background-color: rgba(55, 55, 55, 0.6);
+    border-radius: 10px;
+    transition: all 0.3s ease; /* smooth transition */
+}
+
+.card:hover{
+    scale: 1.1;
+}
+.card img{
+    border-radius: 10px;
+    height: 150px;
+}
+
+.c1 img{
+    width: 250px;
+}
+
+.contact h3{
+    height: auto;
+    color: white;
+    font-size: 30px;
+    font-family: var(--font-Two);
+    padding: 5px;
+}
+
+.contactMain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-Two);
+}
+
+.contactLeft{
+    width: 50%;
+    height: 90vh;
+    background-image: url(../assets/img/Group\ 2372.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.message{
+    width: 450px;
+    height: 200px;
+}
+
+.form-row{
+    margin-left: -2px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1306px) {
+    .right{
+        display: none;
+    }
+    .left{
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+        width: 100%;
+    }
+    .Title div{
+        top: 30px;
+        font-size: 40px;
+        left: -15px;
+    }
+
+    .Title p{
+        position: relative;
+        left: 1px;
+    }
+    .sec1{
+        display: flex;
+    }
+    .sec1::after{
+        content: "";
+        background-image: url(../assets/img/doodles\ mixed\ round.png);
+        position: absolute;
+        width: 100%;
+        height: 90vh;
+        opacity: 0.5;
+        z-index: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+}
+@media screen and (max-width: 730px) {
+    .navigation{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .webName{
+        font-size: 50px;
+    }
+
+    .navigation ul{
+        align-items: center;
+        margin-top: -20px;
+    }
+    .right{
+        display: none;
+    }
+    .left{
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+    .Title div{
+        top: 30px;
+        font-size: 30px;
+        left: -15px;
+    }
+    .Title span{
+        position: relative;
+        top: 4px;
+        font-size: 60px;
+        left: -8px;
+    }
+    .cardsContainer{
+        flex-direction: column;
+        position: relative;
+    }
+    .c2{
+        display: none;
+    }
+    .info{
+        top: 10px;
+        position: absolute;
+        font-size: 20px;
+    }
+
+    .card{
+        width: 300px;
+        height: 200px;
+    }
+
+    
+    .contactMain{
+        justify-content: center;
+    }
+
+    .contactRight{
+        margin: 28px;
+    }
+
+    .form-row{
+        display: flex;
+    }
+
+    .aboutContact{
+        font-size: 22px;
+    }
+
+    .contactLeft{
+        display: none;
+    }
+
+    .form-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form{
+        width: 85vw;
+    }
+
+    .button button{
+        width: 80vw;
+    }
+}

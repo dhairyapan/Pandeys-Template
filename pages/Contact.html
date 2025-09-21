@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="/css/Templates.css">
+</head>
+
+<body>
+    <header id="navbar"></header>
+
+    <div class="m-auto">
+        <hr>
+    </div>
+    <main>
+        <h1 class="max-width2 m-auto">Contact<span> Me</span></h1>
+        <p class="max-width2 m-auto aboutContact">I also create custom templates. For orders or inquiries, feel free to Contact Me — available at an affordable price!</p>
+        <div class="contact">
+            <div class="contactMain">
+                <div class="contactLeft"></div>
+                <div class="contactRight">
+                    <form action="https://formspree.io/f/xdklyzwy" method="POST">
+                        <div class="form-row">
+                            <input class="form" type="text" name="name" placeholder="Your name" required>
+                            <input class="form" type="email" name="_replyto" placeholder="Your email" required>
+                        </div>
+
+                        <textarea class="form message" name="message" placeholder="Your Message" required></textarea>
+
+                        <div class="button"><button class="btn" type="submit">send Message</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    // ADDING NAV BAR
+    fetch("../componet/nav.html")
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById("navbar").innerHTML = data
+    })
+</script>
+</html>

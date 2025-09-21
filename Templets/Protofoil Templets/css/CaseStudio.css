@@ -1,0 +1,139 @@
+.heading {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 29px;
+}
+
+.aboutCase {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutCase p {
+    font-family: var(--default-font-2);
+    font-size: 12px;
+    color: var(--default-font-color);
+    padding-bottom: 25px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    margin: 40px;
+}
+
+.card-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+/* Tag Colors */
+.fintech {
+    background: #ffecc7;
+    color: #e69900;
+}
+
+.edtech {
+    background: #e5f0ff;
+    color: #3366cc;
+}
+
+.pharma {
+    background: #dfffe5;
+    color: #00a65a;
+}
+
+.card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffb100;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e69900;
+}
+
+.btn.blue {
+    background: #3366cc;
+}
+
+.btn.blue:hover {
+    background: #1a4da8;
+}
+
+.btn.green {
+    background: #00a65a;
+}
+
+.btn.green:hover {
+    background: #008f4d;
+}
+
+.card img {
+    width: 445px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Alternate card layout */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+    .card,
+    .reverse {
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+}

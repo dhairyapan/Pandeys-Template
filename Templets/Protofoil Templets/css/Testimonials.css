@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--default-color);
+}
+
+header{
+    margin: 40px;
+}
+
+.heading h1 {
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    padding-top: 40px;
+}
+
+.aboutCase {
+    width: 50vw;
+}
+
+.aboutCase p {
+    color: var(--default-font-color);
+    text-align: center;
+    font-family: var(--default-font-2);
+    font-size: 12px;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.testimonial-box {
+    background: var(--default-color-2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    width: 350px;
+}
+
+.testimonial-box:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-box p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--default-font-color);
+    font-family: var(--default-font-2);
+    margin-bottom: 20px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.client-info img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #444;
+}
+
+.client-info h4 {
+    margin: 0;
+    font-size: 16px;
+}

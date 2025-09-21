@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PandeyTemplets</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utils.css">
+</head>
+
+<body>
+    <header id="navbar"></header>
+
+    <div class="m-auto">
+        <hr>
+    </div>
+    <main>
+        <section class="sec1">
+            <div class="mainContent max-width m-auto">
+                <div class="left">
+                    <div class="Title">
+                        <div>Best and Low Prices</div>
+                        <span>Templates</span>
+                        <p>Welcome to my template store! 🚀 I create modern, responsive, and fully customizable frontend templates that are perfect for websites of all kinds. Along with my ready-made templates, I also offer custom design services — if you have a Figma design or an idea in mind, I can turn it into a pixel-perfect website. Whether you’re looking for a quick solution or a unique custom build, you’ll find high-quality, user-friendly designs here.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="./assets/img/Group 2346.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="templateContainer">
+                <div>
+                    <h2 class="info">Template</h2>
+                </div>
+                <div class="cardsContainer max-width2 m-auto">
+                    <div class="card c2">
+                        <img src="./assets/img/coding image.jpg" alt="">
+                    </div>
+                    <div class="card c1">
+                        <img src="./assets/img/web template.png" alt="">
+                    </div>
+                    <div class="card c3">
+                        <img src="./assets/img/mobile web img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./js/Home.js"></script>
+</body>
+<script>
+    // ADDING NAV BAR
+    fetch("componet/nav.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data
+        })
+</script>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Samples</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="/css/Templates.css">
+</head>
+<body>
+    <header id="navbar"></header>
+    <div><hr></div>
+    <main>
+        <h1 class="max-width2 m-auto">Responsive Web <span>Templates</span></h1>
+        <p class="max-width2 m-auto">I also create custom templates. For orders or inquiries, feel free to reach out on Instagram or Twitter — available at an affordable price!</p>
+        <p class="max-width2 m-auto">These are the best responsive templates for you. To buy, just contact me on Instagram or Twitter</p>
+        <div id="main" class=" max-width2 m-auto">
+    </main>    
+
+    <script src="../js/Templets.js"></script>
+</body>
+<script>
+    // ADDING NAV BAR
+    fetch("../componet/nav.html")
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById("navbar").innerHTML = data
+    })
+</script>
+</html>
