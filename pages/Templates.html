@@ -9,7 +9,16 @@
     <link rel="stylesheet" href="/css/Templates.css">
 </head>
 <body>
-    <header id="navbar"></header>
+    <header id="navbar">
+        <nav class="navigation m-auto max-width">
+            <div class="webName">Pandey</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="pages/Templates.html">Templates</a></li>
+                <li><a href="pages/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <div><hr></div>
     <main>
         <h1 class="max-width2 m-auto">Responsive Web <span>Templates</span></h1>
@@ -20,12 +29,4 @@
 
     <script src="../js/Templets.js"></script>
 </body>
-<script>
-    // ADDING NAV BAR
-    fetch("../componet/nav.html")
-    .then(res => res.text())
-    .then(data => {
-        document.getElementById("navbar").innerHTML = data
-    })
-</script>
 </html>

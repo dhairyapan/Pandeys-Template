@@ -11,7 +11,16 @@
 </head>
 
 <body>
-    <header id="navbar"></header>
+    <header id="navbar">
+        <nav class="navigation m-auto max-width">
+            <div class="webName">Pandey</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="pages/Templates.html">Templates</a></li>
+                <li><a href="pages/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="m-auto">
         <hr>
@@ -38,12 +47,4 @@
         </div>
     </main>
 </body>
-<script>
-    // ADDING NAV BAR
-    fetch("../componet/nav.html")
-    .then(res => res.text())
-    .then(data => {
-        document.getElementById("navbar").innerHTML = data
-    })
-</script>
 </html>

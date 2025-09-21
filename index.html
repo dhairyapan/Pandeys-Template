@@ -10,7 +10,16 @@
 </head>
 
 <body>
-    <header id="navbar"></header>
+    <header id="navbar">
+        <nav class="navigation m-auto max-width">
+            <div class="webName">Pandey</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="pages/Templates.html">Templates</a></li>
+                <li><a href="pages/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="m-auto">
         <hr>
@@ -22,7 +31,11 @@
                     <div class="Title">
                         <div>Best and Low Prices</div>
                         <span>Templates</span>
-                        <p>Welcome to my template store! 🚀 I create modern, responsive, and fully customizable frontend templates that are perfect for websites of all kinds. Along with my ready-made templates, I also offer custom design services — if you have a Figma design or an idea in mind, I can turn it into a pixel-perfect website. Whether you’re looking for a quick solution or a unique custom build, you’ll find high-quality, user-friendly designs here.</p>
+                        <p>Welcome to my template store! 🚀 I create modern, responsive, and fully customizable frontend
+                            templates that are perfect for websites of all kinds. Along with my ready-made templates, I
+                            also offer custom design services — if you have a Figma design or an idea in mind, I can
+                            turn it into a pixel-perfect website. Whether you’re looking for a quick solution or a
+                            unique custom build, you’ll find high-quality, user-friendly designs here.</p>
                     </div>
                 </div>
                 <div class="right">
@@ -53,13 +66,5 @@
 
     <script src="./js/Home.js"></script>
 </body>
-<script>
-    // ADDING NAV BAR
-    fetch("componet/nav.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("navbar").innerHTML = data
-        })
-</script>
 
 </html>
